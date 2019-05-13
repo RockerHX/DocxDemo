@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1F6F761698BFB7B6B9892B /* Pods_DocxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFB7270A60081FCAB67983 /* Pods_DocxDemo.framework */; };
 		C6D2CBC92283E1F100CEB92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2CBC82283E1F100CEB92F /* AppDelegate.swift */; };
 		C6D2CBCB2283E1F100CEB92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2CBCA2283E1F100CEB92F /* ViewController.swift */; };
 		C6D2CBCE2283E1F100CEB92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D2CBCC2283E1F100CEB92F /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17FFB7270A60081FCAB67983 /* Pods_DocxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B83DF2F8FAFA12F8E344A29 /* Pods-DocxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocxDemo.debug.xcconfig"; path = "Target Support Files/Pods-DocxDemo/Pods-DocxDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD7B02D90B178F01A16F197 /* Pods-DocxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocxDemo.release.xcconfig"; path = "Target Support Files/Pods-DocxDemo/Pods-DocxDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C6D2CBC52283E1F100CEB92F /* DocxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D2CBC82283E1F100CEB92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D2CBCA2283E1F100CEB92F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1F6F761698BFB7B6B9892B /* Pods_DocxDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48194B4AE250A325F5120C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17FFB7270A60081FCAB67983 /* Pods_DocxDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80FDDA772990F9AF32B0BD99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B83DF2F8FAFA12F8E344A29 /* Pods-DocxDemo.debug.xcconfig */,
+				BAD7B02D90B178F01A16F197 /* Pods-DocxDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6D2CBBC2283E1F100CEB92F = {
 			isa = PBXGroup;
 			children = (
 				C6D2CBC72283E1F100CEB92F /* DocxDemo */,
 				C6D2CBC62283E1F100CEB92F /* Products */,
+				80FDDA772990F9AF32B0BD99 /* Pods */,
+				48194B4AE250A325F5120C0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6D2CBD72283E1F200CEB92F /* Build configuration list for PBXNativeTarget "DocxDemo" */;
 			buildPhases = (
+				A4EEECA8752F136E9D5EF046 /* [CP] Check Pods Manifest.lock */,
 				C6D2CBC12283E1F100CEB92F /* Sources */,
 				C6D2CBC22283E1F100CEB92F /* Frameworks */,
 				C6D2CBC32283E1F100CEB92F /* Resources */,
+				9E8685E9F36C2CD916DCA9DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E8685E9F36C2CD916DCA9DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocxDemo/Pods-DocxDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocxDemo/Pods-DocxDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DocxDemo/Pods-DocxDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EEECA8752F136E9D5EF046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocxDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6D2CBC12283E1F100CEB92F /* Sources */ = {
@@ -280,10 +348,13 @@
 		};
 		C6D2CBD82283E1F200CEB92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B83DF2F8FAFA12F8E344A29 /* Pods-DocxDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				INFOPLIST_FILE = DocxDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +368,13 @@
 		};
 		C6D2CBD92283E1F200CEB92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD7B02D90B178F01A16F197 /* Pods-DocxDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				INFOPLIST_FILE = DocxDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

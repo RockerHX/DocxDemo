@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F1F6F761698BFB7B6B9892B /* Pods_DocxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFB7270A60081FCAB67983 /* Pods_DocxDemo.framework */; };
+		C6A2DD34228A754500458405 /* document.xml in Resources */ = {isa = PBXBuildFile; fileRef = C6A2DD33228A754500458405 /* document.xml */; };
 		C6D2CBC92283E1F100CEB92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2CBC82283E1F100CEB92F /* AppDelegate.swift */; };
 		C6D2CBCB2283E1F100CEB92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2CBCA2283E1F100CEB92F /* ViewController.swift */; };
 		C6D2CBCE2283E1F100CEB92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D2CBCC2283E1F100CEB92F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		17FFB7270A60081FCAB67983 /* Pods_DocxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B83DF2F8FAFA12F8E344A29 /* Pods-DocxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocxDemo.debug.xcconfig"; path = "Target Support Files/Pods-DocxDemo/Pods-DocxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD7B02D90B178F01A16F197 /* Pods-DocxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocxDemo.release.xcconfig"; path = "Target Support Files/Pods-DocxDemo/Pods-DocxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C6A2DD33228A754500458405 /* document.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = document.xml; sourceTree = "<group>"; };
 		C6D2CBC52283E1F100CEB92F /* DocxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D2CBC82283E1F100CEB92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D2CBCA2283E1F100CEB92F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				C6D2CBCF2283E1F200CEB92F /* Assets.xcassets */,
 				C6D2CBD12283E1F200CEB92F /* LaunchScreen.storyboard */,
 				C6D2CBD42283E1F200CEB92F /* Info.plist */,
+				C6A2DD33228A754500458405 /* document.xml */,
 			);
 			path = DocxDemo;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				C6D2CBD32283E1F200CEB92F /* LaunchScreen.storyboard in Resources */,
 				C6D2CBD02283E1F200CEB92F /* Assets.xcassets in Resources */,
+				C6A2DD34228A754500458405 /* document.xml in Resources */,
 				C6D2CBCE2283E1F100CEB92F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

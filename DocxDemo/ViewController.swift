@@ -9,6 +9,7 @@
 
 import UIKit
 import AEXML
+import Zip
 
 
 class ViewController: UIViewController {
@@ -38,6 +39,14 @@ class ViewController: UIViewController {
         } catch {
             debugPrint(error)
         }
+
+//        do {
+//            let filePath = Bundle.main.url(forResource: "aaa", withExtension: "zip")!
+//            let unzipDirectory = try Zip.quickUnzipFile(filePath) // Unzip
+//        }
+//        catch {
+//            print("Something went wrong")
+//        }
     }
 
 }

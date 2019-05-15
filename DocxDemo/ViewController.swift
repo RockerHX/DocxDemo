@@ -40,6 +40,20 @@ class ViewController: UIViewController {
             debugPrint(error)
         }
 
+        guard let text = textView?.text else { return }
+        let englishParrern = #"[A-Za-z][A-Za-z'\-.]*"#
+        let chineseParrern = #"[\u0391-\uFFE5]"#
+        do {
+            let englishRegex = try NSRegularExpression(pattern: englishParrern, options: [])
+            let chineseRegex = try NSRegularExpression(pattern: chineseParrern, options: [])
+            let englishMatches = englishRegex.matches(in: text, options: [], range: NSRange(location: 0, length: text.count))
+            print("\(englishMatches.count) matches.")
+            let chineseMatches = chineseRegex.matches(in: text, options: [], range: NSRange(location: 0, length: text.count))
+            print("\(chineseMatches.count) matches.")
+        } catch {
+            print(error.localizedDescription)
+        }
+
 //        do {
 //            let filePath = Bundle.main.url(forResource: "aaa", withExtension: "zip")!
 //            let unzipDirectory = try Zip.quickUnzipFile(filePath) // Unzip
